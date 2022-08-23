@@ -37,8 +37,7 @@ sudo apt-get update
 
 *Add the following lines:
 
-set sendmail="/usr/bin/msmtp"
-set message-sendmail-extra-arguments="-a gmail"
+
 
 2-Generate email script alert
 
