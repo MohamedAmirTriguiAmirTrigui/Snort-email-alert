@@ -64,3 +64,13 @@ set message-sendmail-extra-arguments="-a gmail"
 touch email
 touch /var/log/snort/alert1
 
+ 3-Generate the script every 5 minutes
+
+*Tap :
+
+	   crontab -e
+
+*file output:
+
+   	*/5 * * * * /path/to/script
+
