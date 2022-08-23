@@ -18,23 +18,6 @@ cd ~
 nano .msmtprc
 
 
-#Gmail account
-defaults
-#change the location of the log file to any desired location.
-logfile /var/log/msmtp.log
-account gmail
-auth on
-host smtp.gmail.com
-from <yourmail@gmail.com>
-auth on
-tls on
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
-user <yourmail@gmail.com>
-password <your-password>
-port 587
-#set gmail as your default mail server.
-account default : gmail
-
 *Tap this commands:
 
 chmod 600 .msmtprc
