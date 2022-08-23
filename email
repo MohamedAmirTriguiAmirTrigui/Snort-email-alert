@@ -1,0 +1,11 @@
+#!/bin/bash
+while true
+do
+aa=`comm -3 /var/log/snort/alert /var/log/snort/alert1`
+if [ -n "$aa" ]
+then
+	echo "$aa" >> /var/log/snort/alert1
+	echo "$aa" | mail -s "alert" <mail_distination@gmail.com>
+	sleep 60
+fi
+done
